@@ -1,0 +1,20 @@
+digraph spade2dot {
+graph [rankdir = "RL"];
+node [fontname="Helvetica" fontsize="8" style="filled" margin="0.0,0.0"];
+edge [fontname="Helvetica" fontsize="8"];
+"1" [label="path:C:\\Users\\mathieu\\AppData\\Roaming\\tor\ntype:Artifact\nversion:1\nclass:File System" shape="ellipse" fillcolor="khaki1"];
+"2" [label="path:C:\\Users\\mathieu\\AppData\\Roaming\\tor\\state.tmp\ntype:Artifact\nversion:1\nclass:File System" shape="ellipse" fillcolor="khaki1"];
+"3" [label="path:C:\\Users\\mathieu\\AppData\\Roaming\\tor\\lock\ntype:Artifact\nversion:1\nclass:File System" shape="ellipse" fillcolor="khaki1"];
+"4" [label="description:Console Window Host\npid:4488\ntype:Process\nversion:10.0.14393.0 (rs1_release.160715-1616)\ncommandline:\\??\\C:\\WINDOWS\\system32\\conhost.exe 0xffffffff -ForceV1\nppid:4500\nimagepath:C:\\WINDOWS\\system32\\conhost.exe\nname:conhost.exe\ncompany:Microsoft Corporation\narch:64-bit" shape="box" fillcolor="lightsteelblue1"];
+"5" [label="path:C:\\Users\\mathieu\\AppData\\Roaming\\tor\\state.tmp\ntype:Artifact\nversion:3\nclass:File System" shape="ellipse" fillcolor="khaki1"];
+"6" [label="description:\npid:4500\ntype:Process\nversion:\ncommandline:C:\\Users\\mathieu\\Downloads\\Malware\\executable\\APT29_2017-03_Fireeye_Domain_Fronting_with_Tor_6842243f5a41f66a81b85ee524c3cfc7ace10da8_googleService.exe \nppid:4760\nimagepath:C:\\Users\\mathieu\\Downloads\\Malware\\executable\\APT29_2017-03_Fireeye_Domain_Fronting_with_Tor_6842243f5a41f66a81b85ee524c3cfc7ace10da8_googleService.exe\nname:APT29_2017-03_Fireeye_Domain_Fronting_with_Tor_6842243f5a41f66a81b85ee524c3cfc7ace10da8_googleService.exe\ncompany:\narch:32-bit" shape="box" fillcolor="lightsteelblue1"];
+"7" [label="path:C:\\Users\\mathieu\\AppData\\Roaming\\tor\\state.tmp\ntype:Artifact\nversion:2\nclass:File System" shape="ellipse" fillcolor="khaki1"];
+"2" -> "6" [label="(duration:0.0001088\ntime:5:19:39.8661629 PM\ndetail:Desired Access: Generic Write, Read Attributes, Disposition: OverwriteIf, Options: Synchronous IO Non-Alert, Non-Directory File, Attributes: N, ShareMode: Read, Write, AllocationSize: 0, OpenResult: Created\ntype:WasGeneratedBy\ncategory:Write\noperation:CreateFile)" color="red" style="solid"];
+"1" -> "6" [label="(duration:0.0001084\ntime:5:19:39.8651049 PM\ndetail:Desired Access: Read Data/List Directory, Synchronize, Disposition: Create, Options: Directory, Synchronous IO Non-Alert, Open Reparse Point, Attributes: N, ShareMode: Read, Write, AllocationSize: 0, OpenResult: Created\ntype:WasGeneratedBy\ncategory:Write\noperation:CreateFile)" color="red" style="solid"];
+"6" -> "7" [label="(duration:0.0000028\ntime:5:19:39.8667250 PM\ndetail:CreationTime: 5/2/2017 5:19:39 PM, LastAccessTime: 5/2/2017 5:19:39 PM, LastWriteTime: 5/2/2017 5:19:39 PM, ChangeTime: 5/2/2017 5:19:39 PM, FileAttributes: A\ntype:Used\ncategory:Read Metadata\noperation:QueryBasicInformationFile)" color="green" style="solid"];
+"3" -> "6" [label="(duration:0.0001190\ntime:5:19:39.8653587 PM\ndetail:Desired Access: Generic Read/Write, Disposition: OverwriteIf, Options: Synchronous IO Non-Alert, Non-Directory File, Attributes: N, ShareMode: Read, Write, AllocationSize: 0, OpenResult: Created\ntype:WasGeneratedBy\ncategory:Write\noperation:CreateFile)" color="red" style="solid"];
+"4" -> "6" [label="(time:5:19:39.4137120 PM\ntype:WasTriggeredBy)" color="blue" style="solid"];
+"7" -> "6" [label="(duration:0.0000575\ntime:5:19:39.8662906 PM\ndetail:Offset: 0, Length: 222, Priority: Normal\ntype:WasGeneratedBy\ncategory:Write\noperation:WriteFile)" color="red" style="solid"];
+"6" -> "3" [label="(duration:0.0000033\ntime:5:19:39.8654941 PM\ndetail:AllocationSize: 0, EndOfFile: 0, NumberOfLinks: 1, DeletePending: False, Directory: False\ntype:Used\ncategory:Read Metadata\noperation:QueryStandardInformationFile)" color="green" style="solid"];
+"5" -> "6" [label="(duration:0.0000628\ntime:5:19:39.8670230 PM\ndetail:ReplaceIfExists: False, FileName: C:\\Users\\mathieu\\AppData\\Roaming\\tor\\state\ntype:WasGeneratedBy\ncategory:Write\noperation:SetRenameInformationFile)" color="red" style="solid"];
+}
