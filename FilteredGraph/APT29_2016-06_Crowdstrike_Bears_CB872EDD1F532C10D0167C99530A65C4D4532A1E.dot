@@ -1,0 +1,29 @@
+digraph spade2dot {
+graph [rankdir = "RL"];
+node [fontname="Helvetica" fontsize="8" style="filled" margin="0.0,0.0"];
+edge [fontname="Helvetica" fontsize="8"];
+"1" [label="path:C:\\Users\\mathieu\\AppData\\Local\\Temp\\jqftli\ntype:Artifact\nversion:3\nclass:File System" shape="ellipse" fillcolor="khaki1"];
+"2" [label="path:C:\\Users\\mathieu\\AppData\\Local\\.BG63889\ntype:Artifact\nversion:4\nclass:File System" shape="ellipse" fillcolor="khaki1"];
+"3" [label="path:C:\\Users\\mathieu\\AppData\\Local\\.BG63889\ntype:Artifact\nversion:5\nclass:File System" shape="ellipse" fillcolor="khaki1"];
+"4" [label="path:C:\\Users\\mathieu\\AppData\\Local\\.BG63889\ntype:Artifact\nversion:6\nclass:File System" shape="ellipse" fillcolor="khaki1"];
+"5" [label="description:\npid:3508\ntype:Process\nversion:\ncommandline:C:\\Users\\mathieu\\Downloads\\Malware\\executable\\APT29_2016-06_Crowdstrike_Bears_CB872EDD1F532C10D0167C99530A65C4D4532A1E.exe \nppid:3708\nimagepath:C:\\Users\\mathieu\\Downloads\\Malware\\executable\\APT29_2016-06_Crowdstrike_Bears_CB872EDD1F532C10D0167C99530A65C4D4532A1E.exe\nname:APT29_2016-06_Crowdstrike_Bears_CB872EDD1F532C10D0167C99530A65C4D4532A1E.exe\ncompany:\narch:32-bit" shape="box" fillcolor="lightsteelblue1"];
+"6" [label="path:C:\\Users\\mathieu\\AppData\\Local\\.BG63889\ntype:Artifact\nversion:2\nclass:File System" shape="ellipse" fillcolor="khaki1"];
+"7" [label="path:C:\\Users\\mathieu\\AppData\\Local\\Temp\\.BG63889.tmp\ntype:Artifact\nversion:1\nclass:File System" shape="ellipse" fillcolor="khaki1"];
+"8" [label="path:C:\\Users\\mathieu\\AppData\\Local\\Temp\\jqftli\ntype:Artifact\nversion:1\nclass:File System" shape="ellipse" fillcolor="khaki1"];
+"9" [label="path:C:\\Users\\mathieu\\AppData\\Local\\Temp\\jqftli\ntype:Artifact\nversion:2\nclass:File System" shape="ellipse" fillcolor="khaki1"];
+"10" [label="path:C:\\Users\\mathieu\\AppData\\Local\\.BG63889\ntype:Artifact\nversion:3\nclass:File System" shape="ellipse" fillcolor="khaki1"];
+"11" [label="path:C:\\Users\\mathieu\\AppData\\Local\\.BG63889\ntype:Artifact\nversion:1\nclass:File System" shape="ellipse" fillcolor="khaki1"];
+"4" -> "5" [label="(duration:0.0000723\ntime:11:22:45.9117923 AM\ndetail:Offset: 0, Length: 508, Priority: Normal\ntype:WasGeneratedBy\ncategory:Write\noperation:WriteFile)" color="red" style="solid"];
+"5" -> "8" [label="(duration:0.0000033\ntime:11:22:45.8169434 AM\ndetail:AllocationSize: 0, EndOfFile: 0, NumberOfLinks: 1, DeletePending: False, Directory: False\ntype:Used\ncategory:Read Metadata\noperation:QueryStandardInformationFile)" color="green" style="solid"];
+"7" -> "5" [label="(duration:0.0001375\ntime:11:22:45.9112816 AM\ndetail:Desired Access: Generic Read/Write, Disposition: Create, Options: Synchronous IO Non-Alert, Non-Directory File, Attributes: N, ShareMode: Read, Write, AllocationSize: 0, OpenResult: Created\ntype:WasGeneratedBy\ncategory:Write\noperation:CreateFile)" color="red" style="solid"];
+"3" -> "5" [label="(duration:0.0000903\ntime:11:22:45.9115620 AM\ndetail:Desired Access: Generic Write, Read Attributes, Disposition: OverwriteIf, Options: Synchronous IO Non-Alert, Non-Directory File, Attributes: N, ShareMode: Read, Write, AllocationSize: 0, OpenResult: Overwritten\ntype:WasGeneratedBy\ncategory:Write\noperation:CreateFile)" color="red" style="solid"];
+"2" -> "5" [label="(duration:0.0000755\ntime:11:22:45.9106498 AM\ndetail:Offset: 0, Length: 488, Priority: Normal\ntype:WasGeneratedBy\ncategory:Write\noperation:WriteFile)" color="red" style="solid"];
+"10" -> "5" [label="(duration:0.0001511\ntime:11:22:45.9103324 AM\ndetail:Desired Access: Generic Write, Read Attributes, Disposition: OverwriteIf, Options: Synchronous IO Non-Alert, Non-Directory File, Attributes: N, ShareMode: Read, Write, AllocationSize: 0, OpenResult: Overwritten\ntype:WasGeneratedBy\ncategory:Write\noperation:CreateFile)" color="red" style="solid"];
+"11" -> "5" [label="(duration:0.0001244\ntime:11:22:45.8299163 AM\ndetail:Desired Access: Generic Write, Read Attributes, Disposition: OverwriteIf, Options: Synchronous IO Non-Alert, Non-Directory File, Attributes: N, ShareMode: Read, Write, AllocationSize: 0, OpenResult: Created\ntype:WasGeneratedBy\ncategory:Write\noperation:CreateFile)" color="red" style="solid"];
+"1" -> "5" [label="(duration:0.0000082\ntime:11:22:45.8202438 AM\ndetail:Delete: True\ntype:WasGeneratedBy\ncategory:Write\noperation:SetDispositionInformationFile)" color="red" style="solid"];
+"6" -> "5" [label="(duration:0.0000620\ntime:11:22:45.8309041 AM\ndetail:Offset: 0, Length: 437, Priority: Normal\ntype:WasGeneratedBy\ncategory:Write\noperation:WriteFile)" color="red" style="solid"];
+"5" -> "9" [label="(duration:0.0000037\ntime:11:22:45.8202302 AM\ndetail:Attributes: A, ReparseTag: 0x0\ntype:Used\ncategory:Read Metadata\noperation:QueryAttributeTagFile)" color="green" style="solid"];
+"8" -> "5" [label="(duration:0.0100088\ntime:11:22:45.8068981 AM\ndetail:Desired Access: Generic Read/Write, Disposition: Create, Options: Synchronous IO Non-Alert, Non-Directory File, Attributes: N, ShareMode: Read, Write, AllocationSize: 0, OpenResult: Created\ntype:WasGeneratedBy\ncategory:Write\noperation:CreateFile)" color="red" style="solid"];
+"5" -> "7" [label="(duration:0.0000028\ntime:11:22:45.9114315 AM\ndetail:AllocationSize: 0, EndOfFile: 0, NumberOfLinks: 1, DeletePending: False, Directory: False\ntype:Used\ncategory:Read Metadata\noperation:QueryStandardInformationFile)" color="green" style="solid"];
+"9" -> "5" [label="(duration:0.0014451\ntime:11:22:45.8170481 AM\ndetail:Offset: 0, Length: 4, Priority: Normal\ntype:WasGeneratedBy\ncategory:Write\noperation:WriteFile)" color="red" style="solid"];
+}
