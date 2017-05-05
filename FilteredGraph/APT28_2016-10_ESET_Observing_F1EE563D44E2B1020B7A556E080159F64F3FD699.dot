@@ -1,0 +1,20 @@
+digraph spade2dot {
+graph [rankdir = "RL"];
+node [fontname="Helvetica" fontsize="8" style="filled" margin="0.0,0.0"];
+edge [fontname="Helvetica" fontsize="8"];
+"1" [label="description:Host Process for Windows Services\npid:4028\ntype:Process\nversion:10.0.14393.0 (rs1_release.160715-1616)\ncommandline:C:\\WINDOWS\\system32\\svchost.exe -k defragsvc\nppid:572\nimagepath:C:\\WINDOWS\\system32\\svchost.exe\nname:svchost.exe\ncompany:Microsoft Corporation\narch:64-bit" shape="box" fillcolor="lightsteelblue1"];
+"2" [label="path:C:\\ProgramData\\hi951CA090.tmp\ntype:Artifact\nversion:4\nclass:File System" shape="ellipse" fillcolor="khaki1"];
+"3" [label="description:NvdSac\npid:2728\ntype:Process\nversion:11.0.4621.4331splm.dll\ncommandline:C:\\Users\\mathieu\\Downloads\\Malware\\executable\\APT28_2016-10_ESET_Observing_F1EE563D44E2B1020B7A556E080159F64F3FD699.exe \nppid:3708\nimagepath:C:\\Users\\mathieu\\Downloads\\Malware\\executable\\APT28_2016-10_ESET_Observing_F1EE563D44E2B1020B7A556E080159F64F3FD699.exe\nname:APT28_2016-10_ESET_Observing_F1EE563D44E2B1020B7A556E080159F64F3FD699.exe\ncompany:Nvidia Corp.\narch:32-bit" shape="box" fillcolor="lightsteelblue1"];
+"4" [label="path:C:\\ProgramData\\hi951CA090.tmp\ntype:Artifact\nversion:3\nclass:File System" shape="ellipse" fillcolor="khaki1"];
+"5" [label="path:C:\\ProgramData\\hi951CA090.tmp\ntype:Artifact\nversion:5\nclass:File System" shape="ellipse" fillcolor="khaki1"];
+"6" [label="path:C:\\ProgramData\\hi951CA090.tmp\ntype:Artifact\nversion:2\nclass:File System" shape="ellipse" fillcolor="khaki1"];
+"7" [label="path:C:\\ProgramData\\hi951CA090.tmp\ntype:Artifact\nversion:1\nclass:File System" shape="ellipse" fillcolor="khaki1"];
+"3" -> "7" [label="(duration:0.0000057\ntime:10:15:52.4229353 AM\ndetail:AllocationSize: 0, EndOfFile: 0, NumberOfLinks: 1, DeletePending: False, Directory: False\ntype:Used\ncategory:Read Metadata\noperation:QueryStandardInformationFile)" color="green" style="solid"];
+"1" -> "5" [label="(duration:0.0000054\ntime:10:21:17.6365722 AM\ndetail:Control: FSCTL_GET_RETRIEVAL_POINTERS\ntype:Used\ncategory:Read Metadata\noperation:FileSystemControl)" color="green" style="solid"];
+"7" -> "3" [label="(duration:0.0024678\ntime:10:15:52.4204367 AM\ndetail:Desired Access: Generic Read/Write, Disposition: OpenIf, Options: Synchronous IO Non-Alert, Non-Directory File, Attributes: H, ShareMode: Read, AllocationSize: 0, OpenResult: Created\ntype:WasGeneratedBy\ncategory:Write\noperation:CreateFile)" color="red" style="solid"];
+"3" -> "4" [label="(duration:0.0000041\ntime:10:15:52.9787522 AM\ndetail:AllocationSize: 40, EndOfFile: 36, NumberOfLinks: 1, DeletePending: False, Directory: False\ntype:Used\ncategory:Read Metadata\noperation:QueryStandardInformationFile)" color="green" style="solid"];
+"2" -> "3" [label="(duration:0.0001224\ntime:10:15:52.9787657 AM\ndetail:Offset: 36, Length: 4, Priority: Normal\ntype:WasGeneratedBy\ncategory:Write\noperation:WriteFile)" color="red" style="solid"];
+"5" -> "3" [label="(duration:0.0002394\ntime:10:15:52.9789049 AM\ndetail:Offset: 40, Length: 63,652, Priority: Normal\ntype:WasGeneratedBy\ncategory:Write\noperation:WriteFile)" color="red" style="solid"];
+"4" -> "3" [label="(duration:0.0000119\ntime:10:15:52.4230441 AM\ndetail:Offset: 4, Length: 32, Priority: Normal\ntype:WasGeneratedBy\ncategory:Write\noperation:WriteFile)" color="red" style="solid"];
+"6" -> "3" [label="(duration:0.0000723\ntime:10:15:52.4229517 AM\ndetail:Offset: 0, Length: 4, Priority: Normal\ntype:WasGeneratedBy\ncategory:Write\noperation:WriteFile)" color="red" style="solid"];
+}
